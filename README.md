@@ -18,6 +18,9 @@ Rscript main.R
 ```
 The app will be accessible on `http://localhost:8080`.
 
+### Dockerfile
+Make sure all new packages are installed in `Dockerfile` with `RUN install2.r --error [package]`.
+
 ## Settings
 No additional configuration is needed.
 
@@ -29,10 +32,10 @@ docker pull ghcr.io/zabkwak/mat-twitter-score-analyzer:latest
 
 ```bash
 docker run \
---name=mat-twitter-score-analyzer \
--p 127.0.0.1:8080:8080 \
+-p 8080:8080 \
 -d \
 --restart=unless-stopped \
---name=mat-twitter-score-analyzer
+--name=mat-twitter-score-analyzer \
 ghcr.io/zabkwak/mat-twitter-score-analyzer:latest  
 ```
+The app will be accessible on `http://localhost:8080`.
