@@ -25,7 +25,7 @@ shinyUI(fluidPage(theme = shinytheme("journal"),
                 )
       ),
       sliderInput("maxPercentage", "Max. percentage", 50, 100, value = 99, step = 0.5),
-      sliderInput("percentage", "Min. percentage", 0, 50, value = 3, step = 0.5),
+      sliderInput("percentage", "Min. percentage", 0, 50, value = 20, step = 0.5),
       sliderInput("numberFactor", "Num. of components/clusters", 0, 10, value = 3, step = 1),
       sliderInput("minAffinity", "Min. affinity", 0, 100, value = 2, step = 1),
       sliderInput("treshold", "Min. treshold", 0, 20, value = 0, step = 1),
