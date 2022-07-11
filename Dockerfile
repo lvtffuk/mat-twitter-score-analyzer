@@ -18,7 +18,7 @@ RUN install2.r --error BayesLCA
 RUN install2.r --error igraph
 
 ENV PORT=8080
-LABEL org.opencontainers.image.source https://github.com/zabkwak/mat-twitter-score-analyzer
+LABEL org.opencontainers.image.source https://github.com/lvtffuk/mat-twitter-score-analyzer
 EXPOSE 8080
 
 CMD [ "Rscript", "main.R" ]
